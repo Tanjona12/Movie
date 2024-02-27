@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Movie website</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<!--Link Swiper's CSS --> 
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+	<!-- Navbar -->
+	<header>
+		<a class="logo" href="#">
+			<i class='bx bxs-movie'></i> Movies
+		</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<!-- Menu -->
+		<ul class="navbar">
+			<li><a href="#home" class="home-active">Home</a></li>
+			<li><a href="#movies">Movies</a></li>
+			<li><a href="#coming">Coming</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+		</ul>
+		<a class="btn" href="#">Sign In</a>
+	</header>
+
+	<!-- HOME -->
+	<section class="home swiper" id="home">
+		<div class="swiper-wrapper">
+			<!-- Box 1 -->
+	      <div class="swiper-slide conatiner">
+	      	<img src="img/spiderman.jpg" alt="">
+	      	<div class="home-text">
+	      		<span>Marvel Universe</span>
+	      		<h1>Spiderman: <br> Be carnage </h1>
+	      		<a href="#" class="btn">Book Now</a>
+	      		<a href="#" class="play">
+	      			<i class='bx bx-play' ></i>
+	      		</a>
+	      	</div>
+	      </div>
+			<!-- Box 2 -->
+	      <div class="swiper-slide conatiner">
+	      	<img src="img/avenger.jpg" alt="">
+	      	<div class="home-text">
+	      		<span>Marvel Universe</span>
+	      		<h1>Avengers: <br> Infinity War </h1>
+	      		<a href="#" class="btn">Book Now</a>
+	      		<a href="#" class="play">
+	      			<i class='bx bx-play' ></i>
+	      		</a>
+	      	</div>
+	      </div>
+			<!-- Box 3 -->
+		  <div class="swiper-slide conatiner">
+	      	<img src="img/shameless.jpg" alt="">
+	      	<div class="home-text">
+	      		<span>American</span>
+	      		<h1>Shameless: How the <br> show could end </h1>
+	      		<a href="#" class="btn">Book Now</a>
+	      		<a href="#" class="play">
+	      			<i class='bx bx-play' ></i>
+	      		</a>
+	      	</div>
+	      </div>
+
+	    </div>
+
+	    <div class="swiper-pagination"></div>
+	</section>
+
+<!-- ITO E -->
+			<br>
+			<div class="search-block" id="pwaformulaire">
+				<div id="search-form">
+		           	<input type="text" id="pwakeyValue" placeholder="Enter your apikey..." />
+		           	<button id="pwacheckKey" class="pwabtn">Validate</button>
+		        </div>
+	   		</div>
+<div id="pwawrap" class="wrapper">
+      			<div class="search-block">
+				    <button id="pwaremove" class="pwabtn" style="position: absolute; right: 5px;">Remove key</button>
+				    <div id="search-form">
+				        <input type="text" id="pwaquery" placeholder="Enter the title of a movie..." />
+				        <button class="pwabtn">Research</button>
+					</div>
+				</div>
+	<!-- MOVIES -->
+	<section class="movies" id="movies">
+		<h2 class="heading">Opening This Week</h2>
+		    <div class="movies-container" id="pwaroot">
+				<!-- Box 1, 2, ... -->
+			</div>
+	</section>
+</div>
+
+	<!-- COMING -->
+	<section class="coming" id="coming">
+		<h2 class="heading">Coming Soon</h2>
+		<!-- Coming Container -->
+		<div class="coming-container swiper">
+			<div class="swiper-wrapper">
+						<!-- Box 1 -->
+					<div class="swiper-slide box">
+						<div class="box-img">
+							<img src="img/venum.jpg" alt="">
+						</div>
+						<h3>Venum 3</h3>
+						<span>2024</span>
+					</div>
+					<!-- Box 2 -->
+					<div class="swiper-slide box">
+						<div class="box-img">
+							<img src="img/panda.jpg" alt="">
+						</div>
+						<h3>Kung Fu Panda 4</h3>
+						<span>1h 34min | 2024</span>
+					</div>
+					<!-- Box 1 -->
+					<div class="swiper-slide box">
+						<div class="box-img">
+							<img src="img/Furiosa.jpg" alt="">
+						</div>
+						<h3>Furiosa</h3>
+						<span>2024</span>
+					</div>
+					<!-- Box 2 -->
+					<div class="swiper-slide box">
+						<div class="box-img">
+							<img src="img/sonic.jpg" alt="">
+						</div>
+						<h3>Sonic 3</h3>
+						<span>2024</span>
+					</div>
+					<!-- Box 1 -->
+					<div class="swiper-slide box">
+						<div class="box-img">
+							<img src="img/Deadpool_&_Wolverine.jpg" alt="">
+						</div>
+						<h3>Deadpool & Wolverine</h3>
+						<span>2024</span>
+					</div>
+					<!-- Box 2 -->
+					<div class="swiper-slide box">
+						<div class="box-img">
+							<img src="img/Garfield.png" alt="">
+						</div>
+						<h3>Garfield, Héros malgré lui</h3>
+						<span>2024</span>
+					</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- NEWSLETTER -->
+	<section class="newsletter" id="newsletter">
+		<h2>Subscribe To Get <br> Newsletter</h2>
+		<form action="">
+			<input type="email" class="email" placeholder="Enter email..." required name="">
+			<input type="submit" value="Subscribe" class="btn">
+		</form>
+	</section>
+
+<!-- FOOTER -->
+	<section class="footer">
+		<a class="logo" href="#">
+			<i class='bx bxs-movie'></i> Movies
+		</a>
+		<div class="social">
+			<a href="#"><i class='bx bxl-facebook' ></i></a>
+			<a href="#"><i class='bx bxl-twitter' ></i></a>
+			<a href="#"><i class='bx bxl-instagram' ></i></a>
+			<a href="#"><i class='bx bxl-tiktok' ></i></a>
+		</div>
+	</section>
+	<!-- COPYRIGHT -->
+	<div class="copyright">
+		<p>&#169; CarpoolVenom All Right Reserved by TAN</p>
+	</div>
+
+	 <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Link to custom JS -->
+  <script src="app.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
